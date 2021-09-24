@@ -9,7 +9,7 @@ $controle = new HomeController();
 
 switch($pagina){
 
-    case 'home':
+    case 'index':
         $controle->Home();
     break;
 
