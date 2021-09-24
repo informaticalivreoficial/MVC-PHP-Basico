@@ -1,5 +1,6 @@
 <?php
 
+require ('Boot/Config.php');
 require ('controller/HomeController.php');
 
 $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'index';

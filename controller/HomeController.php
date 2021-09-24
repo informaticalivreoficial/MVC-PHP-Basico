@@ -1,6 +1,7 @@
 <?php
 
 require ('model/Model.php');
+require ('model/User.php');
 
 class HomeController 
 {
@@ -21,8 +22,8 @@ class HomeController
 
     public function Login()
     {
-        $model = new Model();
-        $dados = $model->ListarDados();
+        $user = new User();
+        $dados = $user->Login(); 
         include "View/Login.php";
     }
 }
