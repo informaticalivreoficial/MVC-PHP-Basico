@@ -1,0 +1,30 @@
+{
+    "name":"informaticalivreoficial/php-mvc-basico",
+    "description":"Modelo de sistema MVC com PHPOO",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renato Montanari",
+            "email": "renato@informaticalivre.com",
+            "homepage": "https://informaticalivre.com.br",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"        
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App"
+        },
+        "files": [
+            "App/Helpers/Helpers.php"
+        ]
+    },
+    "require": {   
+        "php": "^7.3",
+        "ext-pdo": "^7.1"
+    }
+
+}
