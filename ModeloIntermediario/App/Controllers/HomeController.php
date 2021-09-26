@@ -1,29 +1,11 @@
 <?php
 
-require ('model/Model.php');
-require ('model/User.php');
+namespace App\Controllers;
 
-class HomeController 
+class HomeController extends Controller
 {
-    
-    public function Home()
+    public function index()
     {
-        $model = new Model();
-        $dados = $model->ListarDados();
-        include "View/Home.php";
-    }
-
-    public function Atendimento()
-    {
-        $model = new Model();
-        $dados = $model->ListarDados();
-        include "View/Atendimento.php";
-    }
-
-    public function Login()
-    {
-        $user = new User();
-        $dados = $user->Login(); 
-        include "View/Login.php";
+        $this->render('home/index');
     }
 }
